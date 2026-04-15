@@ -10,7 +10,7 @@ volumes:
 
 services:
   owncloud:
-    image: ${IMAGE:-owncloud/server}:${TAG:-latest}
+    image: ${IMAGE:-owncloud/server}:${TAG:-10.12}
     container_name: owncloud_server
     restart: unless-stopped
     ports:
