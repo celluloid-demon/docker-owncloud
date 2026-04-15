@@ -2,4 +2,4 @@
 services:
   owncloud:
     environment:
-      - OWNCLOUD_ADMIN_PASSWORD=${ADMIN_PASSWORD:-changeme}
+      - OWNCLOUD_ADMIN_PASSWORD=${ADMIN_PASSWORD:-admin}
