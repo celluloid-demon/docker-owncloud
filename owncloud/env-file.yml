@@ -1,0 +1,5 @@
+---
+services:
+  owncloud:
+    env_file:
+      - ${OC_SECRET_ENV_FILE}
