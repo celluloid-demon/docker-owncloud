@@ -1,0 +1,17 @@
+services:
+  owncloud:
+    restart: unless-stopped
+    env_file:
+      - ${SECRETS}/owncloud.env
+    volumes:
+      - ${VOLUMES}/files:/mnt/data
+
+  mariadb:
+    restart: unless-stopped
+    volumes:
+      - ${VOLUMES}/mysql:/var/lib/mysql
+
+  redis:
+    restart: unless-stopped
+    volumes:
+      - ${VOLUMES}/redis:/data
